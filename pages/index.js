@@ -30,7 +30,7 @@ export const QuizContainer = styled.div`
   }
   h1{
     font-weight: bold;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
   }
 `;
 
