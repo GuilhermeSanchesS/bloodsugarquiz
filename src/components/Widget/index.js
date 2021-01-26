@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
@@ -19,6 +17,28 @@ const Widget = styled.div`
     font-size: 14px;
     font-weight: 400;
     line-height: 1;
+  }
+  // Mudar
+  input{
+    background: ${({ theme }) => theme.colors.mainBg};
+    color: ${({ theme }) => theme.colors.contrastText};
+    height: 30px;
+    border: 2px solid ${({ theme }) => theme.colors.primary};
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  button{
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.contrastText};
+    border: 2px solid ${({ theme }) => theme.colors.primary};
+    border-radius: 10px;
+    padding: 5px;
+  }
+  button:hover{
+    background-color: transparent;
+    color: ${({ theme }) => theme.colors.secondary};
+    border: 2px solid ${({ theme }) => theme.colors.primary};
   }
 `;
 
