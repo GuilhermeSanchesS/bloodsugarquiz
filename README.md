@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bloodsugarquiz.guilhermesanchess.vercel.app/">
-    <img src="https://raw.githubusercontent.com/GuilhermeSanchesS/Portifolio/master/static/bloodquiz.png" height="150" width="175" alt="blood suger" />
+    <img src="https://raw.githubusercontent.com/GuilhermeSanchesS/Portifolio/master/static/bloodquiz.png"  alt="blood suger" />
   </a>
 </p>
 
@@ -41,8 +41,8 @@ API com quatros métodos:</p>
 <br>
 <br>
 <a href="https://github.com/omariosouto" target="_new">
-  <img src="https://img.shields.io/badge/-Washington%20Soares%20Braga-000000?style=flat-square&labelColor=000000&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-omariosouto-000000?style=flat-square&labelColor=000000&logo=github&logoColor=white"/>
 </a>
 <a href="https://github.com/alura-challenges" target="_new">
-  <img src="https://img.shields.io/badge/-Nelio Alves-000000?style=flat-square&labelColor=000000&logo=github&logoColor=white"/>
+  <img src="https://img.shields.io/badge/-alura-000000?style=flat-square&labelColor=000000&logo=github&logoColor=white"/>
 </a>
