@@ -4,25 +4,25 @@
     "description": "Teste os seus conhecimentos sobre sua alimentação e seu estilo de vida",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
+        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
+        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "Batata",
+          "Pão",
+          "Amêndoas",
+          "Arroz branco"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
+        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "description": "Considerando exame de glicemia em jejum",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "superior a 126 mg/dL",
+           "inferior a 70 mg/dL"
         ]
       }
     ],

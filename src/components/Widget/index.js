@@ -18,28 +18,6 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
-  // Mudar
-  input{
-    background: ${({ theme }) => theme.colors.mainBg};
-    color: ${({ theme }) => theme.colors.contrastText};
-    height: 30px;
-    border: 2px solid ${({ theme }) => theme.colors.primary};
-    border-radius: 5px;
-    margin: 5px;
-  }
-
-  button{
-    background-color: ${({ theme }) => theme.colors.primary};
-    color: ${({ theme }) => theme.colors.contrastText};
-    border: 2px solid ${({ theme }) => theme.colors.primary};
-    border-radius: 10px;
-    padding: 5px;
-  }
-  button:hover{
-    background-color: transparent;
-    color: ${({ theme }) => theme.colors.secondary};
-    border: 2px solid ${({ theme }) => theme.colors.primary};
-  }
 `;
 
 Widget.Header = styled.header`
@@ -65,6 +43,24 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 
