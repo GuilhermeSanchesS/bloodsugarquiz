@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bloodsugarquiz.guilhermesanchess.vercel.app/">
-    <img src="https://imgur.com/bEGkgdW"  alt="blood suger" />
+    <img src="https://raw.githubusercontent.com/GuilhermeSanchesS/Portifolio/master/static/bloodquiz.png" height="150" width="175" alt="blood suger" />
   </a>
 </p>
 
