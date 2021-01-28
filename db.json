@@ -1,7 +1,8 @@
 {
     "bg": "https://i.giphy.com/media/11i03wSzIuNXiw/giphy.webp",
-    "title": "Blood Sugar Quiz",
+    "title": " Blood Sugar Quiz",
     "description": "Teste os seus conhecimentos sobre sua alimentação e seu estilo de vida",
+    "winner": "https://i.giphy.com/media/26BkNituin1dca6GI/giphy.webp",
     "questions": [
       {
         "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
@@ -9,10 +10,98 @@
         "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          "Batata",
-          "Pão",
-          "Amêndoas",
-          "Arroz branco"
+          "🥔 Batata",
+          "🍞 Pão",
+          "🥜 Amêndoas",
+          "🍚 Arroz branco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
+        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "description": "Considerando exame de glicemia em jejum",
+        "answer": 0,
+        "alternatives": [
+           "superior a 126 mg/dL",
+           "inferior a 70 mg/dL"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
+        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "🥔 Batata",
+          "🍞 Pão",
+          "🥜 Amêndoas",
+          "🍚 Arroz branco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
+        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "description": "Considerando exame de glicemia em jejum",
+        "answer": 0,
+        "alternatives": [
+           "superior a 126 mg/dL",
+           "inferior a 70 mg/dL"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
+        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "🥔 Batata",
+          "🍞 Pão",
+          "🥜 Amêndoas",
+          "🍚 Arroz branco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
+        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "description": "Considerando exame de glicemia em jejum",
+        "answer": 0,
+        "alternatives": [
+           "superior a 126 mg/dL",
+           "inferior a 70 mg/dL"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
+        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "🥔 Batata",
+          "🍞 Pão",
+          "🥜 Amêndoas",
+          "🍚 Arroz branco"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
+        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "description": "Considerando exame de glicemia em jejum",
+        "answer": 0,
+        "alternatives": [
+           "superior a 126 mg/dL",
+           "inferior a 70 mg/dL"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
+        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
+        "description": "Essa é pra aquecer",
+        "answer": 2,
+        "alternatives": [
+          "🥔 Batata",
+          "🍞 Pão",
+          "🥜 Amêndoas",
+          "🍚 Arroz branco"
         ]
       },
       {

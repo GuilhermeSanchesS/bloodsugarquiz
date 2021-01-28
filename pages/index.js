@@ -75,7 +75,7 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quizes da Galera</h1>
+            <h1>🎮 Quizes da Galera</h1>
 
             <p>
               Dá uma olhada nesses quizes incríveis que o pessoal

@@ -43,16 +43,16 @@ export default function ListQuiz() {
   return (
     <List>
       <li>
-        <a href="https://quiz-dragon-ball-immersion-alura-next-js.vercel.app/">Jean Machado</a>
+        <a href="https://quiz-dragon-ball-immersion-alura-next-js.vercel.app/">🎮 Jean Machado ⭐</a>
       </li>
       <li>
-        <a href="https://quiz-cavaleiro-zodiaco.vercel.app/">ReneSena</a>
+        <a href="https://quiz-cavaleiro-zodiaco.vercel.app/">🎮 ReneSena ⭐</a>
       </li>
       <li>
-        <a href="https://quiz-games.gabrielwolf-dev.vercel.app/">Gabriel Wolf</a>
+        <a href="https://quiz-games.gabrielwolf-dev.vercel.app/">🎮 Gabriel Wolf ⭐</a>
       </li>
       <li>
-        <a href="https://divequiz.fncarneiro.vercel.app/">FernandoNC</a>
+        <a href="https://divequiz.fncarneiro.vercel.app/">🎮 FernandoNC ⭐</a>
       </li>
     </List>
   );
