@@ -1,25 +1,13 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import Head from 'next/head';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Button from '../src/components/Button';
-
-function LoadingWidget() {
-  return (
-    <Widget>
-      <Widget.Header>
-        Carregando...
-      </Widget.Header>
-
-      <Widget.Content>
-        [Desafio do Loading]
-      </Widget.Content>
-    </Widget>
-  );
-}
+import Loading from '../src/components/Loading';
 
 function QuestionWidget({
   question,
@@ -31,6 +19,9 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <Head>
+          <title>{db.title}</title>
+        </Head>
         {/* <BackLinkArrow href="/" /> */}
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
@@ -136,9 +127,17 @@ export default function QuizPage() {
           />
         )}
 
-        {screenState === screenStates.LOADING && <LoadingWidget />}
+        {screenState === screenStates.LOADING && <Loading />}
 
-        {screenState === screenStates.RESULT && <div>Você acertou X questões, parabéns!</div>}
+        {screenState === screenStates.RESULT
+        && (
+          <Widget>
+            <Widget.Content>
+              <h1>Você acertou X questões, parabéns!</h1>
+            </Widget.Content>
+          </Widget>
+
+        )}
       </QuizContainer>
     </QuizBackground>
   );
