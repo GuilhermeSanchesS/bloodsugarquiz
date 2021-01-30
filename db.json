@@ -29,7 +29,7 @@
       {
         "image": "https://media.giphy.com/media/kbGuEmD7AYhqM/giphy.gif",
         "title": "Se você tratou uma reação de baixo nível de açúcar no sangue com tabletes de glicose e agora está acima de 70, você deve fazer uma refeição ou lanche substancial",
-        "description": "Em quanto tempo:",
+        "description": "Em quanto tempo após o teste:",
         "answer": 2,
         "alternatives": [
           "🕜 30 minutos",
@@ -72,7 +72,7 @@
       {
         "image": "https://media.giphy.com/media/J6Ukx0azkxCBGUn846/giphy.gif",
         "title": "Com que frequência uma pessoa com diabetes tipo 1 deve verificar seus níveis de açúcar no sangue todos os dias?",
-        "description": "Essa deve ser feito:",
+        "description": "Como deve ser feito:",
         "answer": 1,
         "alternatives": [
           " 🌞1️⃣ Uma vez por dia",
@@ -97,7 +97,7 @@
         "image": "https://media.giphy.com/media/sCqnpiUFN228E/giphy.gif",
         "title": "Um tumor maligno que afeta as células das ilhotas do pâncreas é:",
         "description": "Essa é dificil sera que você acerta?",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
           "💉 Glucagonama",
           "💉 Linfoma",

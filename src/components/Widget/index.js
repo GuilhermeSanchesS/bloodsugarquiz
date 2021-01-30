@@ -4,7 +4,7 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  background-image: linear-gradient(180deg, ${({ theme }) => theme.colors.mainBg} 70%,rgba(255,23,20,0.47942927170868344) 100%);
   box-shadow: 0 0 30px ${({ theme }) => theme.colors.primary};
   -webkit-box-shadow: 0 0 30px ${({ theme }) => theme.colors.primary};
   border-radius: 4px;

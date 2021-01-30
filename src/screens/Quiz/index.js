@@ -1,6 +1,7 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 import { Lottie } from '@crello/react-lottie';
 import { motion } from 'framer-motion';
 import db from '../../../db.json';
@@ -14,6 +15,8 @@ import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
 
 function ResultWidget({ results }) {
+  const router = useRouter();
+  const { name } = router.query;
   return (
     <Widget
       as={motion.section}
@@ -27,7 +30,7 @@ function ResultWidget({ results }) {
     >
       <Widget.Header>
         <BackLinkArrow href="/" />
-        Tela de Resultado:
+        {`PARABÉNS 🏅 ${name}!! 🎉`}
       </Widget.Header>
 
       <Widget.Content>

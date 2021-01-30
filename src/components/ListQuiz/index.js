@@ -10,15 +10,15 @@ const List = styled.ul`
 	max-height: 140px;
 	overflow-y: auto;
 	::-webkit-scrollbar {
-		background-color: #222;
+		background-image: linear-gradient(180deg, #000000, ${({ theme }) => theme.colors.mainBg} 100%);
 		width: 8px;
 		border-radius: 50px;
 	}
 	::-webkit-scrollbar-thumb {
 		background-image: linear-gradient(
 			180deg,
-			${({ theme }) => `${theme.colors.primary}`},
-			#212121
+			#000000,
+			${({ theme }) => `${theme.colors.primary}`}
 		);
 		backdrop-filter: blur(4px);
 		border-radius: 50px;
