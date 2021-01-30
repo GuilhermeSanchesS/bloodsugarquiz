@@ -3,6 +3,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
+import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 
 import db from '../db.json';
@@ -48,7 +49,16 @@ export default function Home() {
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, y: '0' },
+            hidden: { opacity: 0, y: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Header>
             <h1>{db.title}</h1>
           </Widget.Header>
@@ -73,7 +83,16 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
+        <Widget
+          as={motion.section}
+          transition={{ delay: 0.5, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1 },
+            hidden: { opacity: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        >
           <Widget.Content>
             <h1>🎮 Quizes da Galera</h1>
 
@@ -84,9 +103,20 @@ export default function Home() {
             <ListQuiz />
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer
+          as={motion.section}
+          transition={{ delay: 0, duration: 0.5 }}
+          variants={{
+            show: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          initial="hidden"
+          animate="show"
+        />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/GuilhermeSanchesS" />
+      <GitHubCorner
+        projectUrl="https://github.com/GuilhermeSanchesS"
+      />
     </QuizBackground>
   );
 }

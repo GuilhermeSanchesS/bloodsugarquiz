@@ -5,8 +5,8 @@ import styled from 'styled-components';
 const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.secondary};
   color: ${({ theme }) => theme.colors.contrastText};
-  border-radius: ${({ theme }) => theme.borderRadius};
-  border: 0;
+  border-radius: 30px;
+  border: 2px solid ${({ theme }) => theme.colors.secondary};
   width: 100%;
   padding: 10px 16px;
   font-weight: bold;
@@ -18,10 +18,13 @@ const Button = styled.button`
   cursor: pointer;
   &:hover,
   &:focus {
-    opacity: .5;
+    opacity: .3;
+    background: #511d29;
+    color: ${({ theme }) => theme.colors.secondary};
   }
   &:disabled {
-    background-color: #979797;
+    box-shadow: inset 0 0 50px rgba(0,0,0,0.5);
+    background: transparent;
     cursor: not-allowed;
   }
 `;

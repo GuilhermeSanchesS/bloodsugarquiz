@@ -2,6 +2,9 @@
 /* eslint no-tabs: ["error", { allowIndentationTabs: true }] */
 import React from 'react';
 import styled from 'styled-components';
+import db from '../../../db.json';
+import Widget from '../Widget';
+import Link from '../Link';
 
 const List = styled.ul`
 	max-height: 140px;
@@ -42,18 +45,26 @@ const List = styled.ul`
 export default function ListQuiz() {
   return (
     <List>
-      <li>
-        <a href="https://quiz-dragon-ball-immersion-alura-next-js.vercel.app/">🎮 Jean Machado ⭐</a>
-      </li>
-      <li>
-        <a href="https://quiz-cavaleiro-zodiaco.vercel.app/">🎮 ReneSena ⭐</a>
-      </li>
-      <li>
-        <a href="https://quiz-games.gabrielwolf-dev.vercel.app/">🎮 Gabriel Wolf ⭐</a>
-      </li>
-      <li>
-        <a href="https://divequiz.fncarneiro.vercel.app/">🎮 FernandoNC ⭐</a>
-      </li>
+      <ul>
+        {db.external.map((linkExterno) => {
+          const [projectName, githubUser] = linkExterno
+            .replace(/\//g, '')
+            .replace('https:', '')
+            .replace('.vercel.app', '')
+            .split('.');
+
+          return (
+            <li key={linkExterno}>
+              <Widget.Topic
+                as={Link}
+                href={`/quiz/${projectName}___${githubUser}`}
+              >
+                {`${githubUser}/${projectName}`}
+              </Widget.Topic>
+            </li>
+          );
+        })}
+      </ul>
     </List>
   );
 }

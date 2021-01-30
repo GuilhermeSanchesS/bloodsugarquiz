@@ -22,101 +22,107 @@
         "description": "Considerando exame de glicemia em jejum",
         "answer": 0,
         "alternatives": [
-           "superior a 126 mg/dL",
-           "inferior a 70 mg/dL"
+           "☝ superior a 126 mg/dL",
+           "👇 inferior a 70 mg/dL"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
-        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/kbGuEmD7AYhqM/giphy.gif",
+        "title": "Se você tratou uma reação de baixo nível de açúcar no sangue com tabletes de glicose e agora está acima de 70, você deve fazer uma refeição ou lanche substancial",
+        "description": "Em quanto tempo:",
         "answer": 2,
         "alternatives": [
-          "🥔 Batata",
-          "🍞 Pão",
-          "🥜 Amêndoas",
-          "🍚 Arroz branco"
+          "🕜 30 minutos",
+          "🕜 15 minutos",
+          "🕐 1 hora"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
-        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "image": "https://media.giphy.com/media/ddL6iq4oY2MY8/giphy.gif",
+        "title": "Qual o outro nome para um episódio de glicemia baixa?",
         "description": "Considerando exame de glicemia em jejum",
-        "answer": 0,
+        "answer": 1,
         "alternatives": [
-           "superior a 126 mg/dL",
-           "inferior a 70 mg/dL"
+           "💉 Hiperglicemia",
+           "💉 Hipoglicemia",
+           "💉 Retinopatia"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
-        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/ro5J9EwEFIBlC/giphy.gif",
+        "title": "Os sintomas de baixa glicose no sangue incluem:",
+        "description": "Essa pode salvar!!!",
         "answer": 2,
         "alternatives": [
-          "🥔 Batata",
-          "🍞 Pão",
-          "🥜 Amêndoas",
-          "🍚 Arroz branco"
+          "😵 Tonturas, inchaço dos tornozelos, ansiedade",
+          "🤢 Suor, confusão, náusea",
+          "🤦‍♂️ Tremores, dor de cabeça, visão embaçada"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
-        "title": "Qual o nível de glicemia é considerado diabetes?",
-        "description": "Considerando exame de glicemia em jejum",
-        "answer": 0,
+        "image": "https://media.giphy.com/media/3o7aD9cUljjChM6jcs/giphy.gif",
+        "title": "Se você estiver inconsciente, um amigo ou membro da família deve colocar açúcar em sua boca?",
+        "description": "Essa pode salvar algem:",
+        "answer": 1,
         "alternatives": [
-           "superior a 126 mg/dL",
-           "inferior a 70 mg/dL"
+           "🍬 Sim, devo colocar algo com açúcar",
+           "🚫 Não, eu poderia engasgar e morrer"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
-        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
-        "description": "Essa é pra aquecer",
+        "image": "https://media.giphy.com/media/J6Ukx0azkxCBGUn846/giphy.gif",
+        "title": "Com que frequência uma pessoa com diabetes tipo 1 deve verificar seus níveis de açúcar no sangue todos os dias?",
+        "description": "Essa deve ser feito:",
+        "answer": 1,
+        "alternatives": [
+          " 🌞1️⃣ Uma vez por dia",
+          " 🌞🔢 4 ou mais vezes ao dia",
+          " ⛅❌ Não necessariamente todos os dias",
+          " 🌞2️⃣ Duas vez por dia"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/bpL1G0pRHflVDD3TGV/giphy.gif",
+        "title": "Qual procedimento é indicado para o controle de uma hemorragia externa?",
+        "description": "Primeiros socorros:",
+        "answer": 3,
+        "alternatives": [
+           "🤒 Compressa de gelo.",
+           "🤕 Torniquete e enfaixamento.",
+           "😰 Limpar o ferimento.",
+           "🤕 Curativo compressivo."
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/sCqnpiUFN228E/giphy.gif",
+        "title": "Um tumor maligno que afeta as células das ilhotas do pâncreas é:",
+        "description": "Essa é dificil sera que você acerta?",
         "answer": 2,
         "alternatives": [
-          "🥔 Batata",
-          "🍞 Pão",
-          "🥜 Amêndoas",
-          "🍚 Arroz branco"
+          "💉 Glucagonama",
+          "💉 Linfoma",
+          "💉 Sarcoma",
+          "💉 Glaucoma"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
-        "title": "Qual o nível de glicemia é considerado diabetes?",
+        "image": "https://media.giphy.com/media/3oKIPdGRt4YcjFx8be/giphy.gif",
+        "title": "Assinale abaixo a alternativa que corresponde corretamente ao serviço de emergência e o número de telefone:",
         "description": "Considerando exame de glicemia em jejum",
-        "answer": 0,
-        "alternatives": [
-           "superior a 126 mg/dL",
-           "inferior a 70 mg/dL"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/12uXi1GXBibALC/giphy.gif",
-        "title": "Há alguns alimentos capazes de auxiliar a diminuir os níveis de açúcar no sangue qual é?",
-        "description": "Essa é pra aquecer",
         "answer": 2,
         "alternatives": [
-          "🥔 Batata",
-          "🍞 Pão",
-          "🥜 Amêndoas",
-          "🍚 Arroz branco"
-        ]
-      },
-      {
-        "image": "https://media.giphy.com/media/xTcnSQFm3Cmpr1tLOw/giphy.gif",
-        "title": "Qual o nível de glicemia é considerado diabetes?",
-        "description": "Considerando exame de glicemia em jejum",
-        "answer": 0,
-        "alternatives": [
-           "superior a 126 mg/dL",
-           "inferior a 70 mg/dL"
+           "🚑 SAMU 193, 🚒 Bombeiro 190, 🚓 Polícia 192",
+           "🚑 SAMU 190, 🚒 Bombeiro 192, 🚓 Polícia 193",
+           "🚑 SAMU 192, 🚒 Bombeiro 193, 🚓 Polícia 190"
         ]
       }
     ],
     "external": [
-      ""
+      "https://covid19quiz.felipepereirapinto.vercel.app/",
+      "https://covid-quiz.pedrofelipemm.vercel.app/",
+      "https://aluraquiz-gastronomia.pedrohb88.vercel.app/",
+      "https://quiz-contemplese.ricardoltt.vercel.app/",
+      "https://naturebaquiz.melissatvs.vercel.app/"
     ],
     "theme": {
       "colors": {
