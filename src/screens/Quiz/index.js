@@ -1,7 +1,8 @@
-/* eslint-disable linebreak-style */
+/* eslint-disable import/no-unresolved */
 /* eslint-disable react/prop-types */
 import React from 'react';
 import { useRouter } from 'next/router';
+import PropTypes from 'prop-types';
 import { Lottie } from '@crello/react-lottie';
 import { motion } from 'framer-motion';
 import db from '../../../db.json';
@@ -11,66 +12,72 @@ import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
 import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
+import Time from '../../components/Time';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
+import Alert from '../../components/Alert';
 
 function ResultWidget({ results }) {
   const router = useRouter();
   const { name } = router.query;
-  return (
-    <Widget
-      as={motion.section}
-      transition={{ delay: 0, duration: 0.5 }}
-      variants={{
-        show: { opacity: 1, y: '0' },
-        hidden: { opacity: 0, y: '100%' },
-      }}
-      initial="hidden"
-      animate="show"
-    >
-      <Widget.Header>
-        <BackLinkArrow href="/" />
-        {`PARABÉNS 🏅 ${name}!! 🎉`}
-      </Widget.Header>
 
-      <Widget.Content>
-        <img
-          alt="Descrição"
-          style={{
-            width: '100%',
-            objectFit: 'cover',
-          }}
-          src={db.winner}
-        />
-        <p>
-          Você acertou 🏆
-          {' '}
-          {/* {results.reduce((somatoriaAtual, resultAtual) => {
-            const isAcerto = resultAtual === true;
-            if (isAcerto) {
-              return somatoriaAtual + 1;
-            }
-            return somatoriaAtual;
-          }, 0)} */}
-          {results.filter((x) => x).length}
-          {' '}
-          perguntas
-        </p>
-        <ul>
-          {results.map((result, index) => (
-            <li key={`result__${result}`}>
-              #
-              {index + 1}
-              {' '}
-              Resultado:
-              {result === true
-                ? '✅ Acertou'
-                : '❌ Errou'}
-            </li>
-          ))}
-        </ul>
-      </Widget.Content>
-    </Widget>
+
+  return (
+    <>
+      <Widget
+        as={motion.section}
+        transition={{ delay: 0, duration: 0.5 }}
+        variants={{
+          show: { opacity: 1, y: '0' },
+          hidden: { opacity: 0, y: '100%' },
+        }}
+        initial="hidden"
+        animate="show"
+      >
+        <Widget.Header>
+          {`PARABÉNS 🏅 ${name}!!`}
+        </Widget.Header>
+
+        <Widget.Content>
+          <img
+            alt="Descrição"
+            style={{
+              width: '100%',
+              objectFit: 'cover',
+            }}
+            src={db.winner}
+          />
+          <p>
+            Você acertou 🏆
+            {' '}
+            {/* {results.reduce((somatoriaAtual, resultAtual) => {
+              const isAcerto = resultAtual === true;
+              if (isAcerto) {
+                return somatoriaAtual + 1;
+              }
+              return somatoriaAtual;
+            }, 0)} */}
+            {results.filter((x) => x).length}
+            {' '}
+            perguntas
+          </p>
+          <ul>
+            {results.map((result, index) => (
+              <li key={`result__${result}`}>
+                {`0${index + 1}º`}
+                Resultado: {' '}
+                {result === true
+                  ? '✅ Acertou'
+                  : '❌ Errou'}
+              </li>
+            ))}
+          </ul>
+          <Button type="button" onClick={() => router.push('/')}>
+            RENICIAR
+          </Button>
+        </Widget.Content>
+      </Widget>
+    </>
   );
 }
 
@@ -101,9 +108,30 @@ function QuestionWidget({
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectedAlternative === question.answer;
   const hasAlternativeSelected = selectedAlternative !== undefined;
+  
+  const [timer, setTimer] = React.useState(30);
 
+  React.useEffect(() => {
+		let alarm = setInterval(handleTimer, 1000);
+
+		function handleTimer() {
+			setTimer((timer) => timer - 1);
+		}
+
+		if (timer === 0) {
+			console.log(timer);
+			clearInterval(alarm);
+			setTimer(0);
+			setTimeout(() => {() => router.push('/')}, 5 * 1000);
+		}
+
+		return () => clearInterval(alarm);
+  }, [timer]);
+  
   return (
-    <Widget
+    <>
+      <Alert status={timer === 0 ? 'show' : ''} />
+      <Widget
       as={motion.section}
       transition={{ delay: 0, duration: 0.5 }}
       variants={{
@@ -118,6 +146,7 @@ function QuestionWidget({
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
+        <Time count={timer} />
       </Widget.Header>
 
       <img
@@ -136,7 +165,6 @@ function QuestionWidget({
         <p>
           {question.description}
         </p>
-
         <AlternativesForm
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
@@ -144,9 +172,10 @@ function QuestionWidget({
             setTimeout(() => {
               addResult(isCorrect);
               onSubmit();
+              setTimer(30);
               setIsQuestionSubmited(false);
               setSelectedAlternative(undefined);
-            }, 3 * 1000);
+            }, 5 * 1000);
           }}
         >
           {question.alternatives.map((alternative, alternativeIndex) => {
@@ -172,7 +201,6 @@ function QuestionWidget({
               </Widget.Topic>
             );
           })}
-
           {/* <pre>
             {JSON.stringify(question, null, 4)}
           </pre> */}
@@ -183,7 +211,8 @@ function QuestionWidget({
           {isQuestionSubmited && !isCorrect && <p>👎Incorreta! Continue tentando ❌</p>}
         </AlternativesForm>
       </Widget.Content>
-    </Widget>
+    </Widget> 
+    </>
   );
 }
 

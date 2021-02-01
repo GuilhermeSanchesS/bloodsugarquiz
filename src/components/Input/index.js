@@ -2,6 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const InputBase = styled.input`
   width: 100%;
@@ -23,6 +24,12 @@ export default function Input({ onChange, placeholder, ...props }) {
   return (
     <div>
       <InputBase
+        as={motion.input}
+        transition={{ delay: 0.5, duration: 0.4 }}
+        variants={{
+          show: { opacity: 1, x: '0' },
+          hidden: { opacity: 0, x: '100%' },
+        }}
         placeholder={placeholder}
         onChange={onChange}
         // eslint-disable-next-line react/jsx-props-no-spreading
